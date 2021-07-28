@@ -9,9 +9,9 @@ services:
       - '25672:25672'
       - '15672:15672'
     environment:
-      - RABBITMQ_SECURE_PASSWORD: yes
-      - RABBITMQ_USERNAME: df
-      - RABBITMQ_PASSWORD: admin
+      - RABBITMQ_SECURE_PASSWORD=yes
+      - RABBITMQ_USERNAME=df
+      - RABBITMQ_PASSWORD=admin
     volumes:
       - 'rabbitmq_data:/bitnami'
 volumes:
