@@ -13,7 +13,8 @@ services:
       - RABBITMQ_USERNAME=df
       - RABBITMQ_PASSWORD=admin
     volumes:
-      - 'rabbitmq_data:/bitnami'
+      # - 'rabbitmq_data:/bitnami'
+      - ./data:/bitnami
 volumes:
   rabbitmq_data:
     driver: local
