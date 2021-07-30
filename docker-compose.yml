@@ -4,17 +4,24 @@ services:
   rabbitmq:
     image: docker.io/bitnami/rabbitmq:3.8
     ports:
-      - '4369:4369'
+      # rabbitMQ server port
       - '5672:5672'
-      - '25672:25672'
+      # rabbitMq server management port
       - '15672:15672'
+      # idk what belows use for
+      - '4369:4369'    
+      - '25672:25672'
     environment:
       - RABBITMQ_SECURE_PASSWORD=yes
-      - RABBITMQ_USERNAME=df
-      - RABBITMQ_PASSWORD=admin
+      - RABBITMQ_USERNAME=soselab
+      - RABBITMQ_PASSWORD=soselab401
     volumes:
       # - 'rabbitmq_data:/bitnami'
       - ./data:/bitnami
 volumes:
   rabbitmq_data:
     driver: local
+
+
+
+    
