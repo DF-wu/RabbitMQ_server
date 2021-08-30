@@ -20,9 +20,11 @@ services:
     volumes:
       # - 'rabbitmq_data:/bitnami'
       - ./data:/bitnami
-volumes:
-  rabbitmq_data:
-    driver: local
+
+#  if use docker volume  
+# volumes:
+#   rabbitmq_data:
+#     driver: local
 
 
 
