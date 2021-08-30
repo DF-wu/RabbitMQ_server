@@ -5,9 +5,9 @@ services:
     image: docker.io/bitnami/rabbitmq:3.8
     ports:
       # rabbitMQ server port
-      - '5672:5672'
+      - '10109:5672'
       # rabbitMq server management port
-      - '15672:15672'
+      - '10110:15672'
       # idk what belows use for
       - '4369:4369'    
       - '25672:25672'
